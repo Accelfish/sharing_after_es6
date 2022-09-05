@@ -1,3 +1,7 @@
+# Project 內容
+ES6 以後部分寫法範例
+含: 解構賦值、展開語法、其餘參數、可選串連、Nullish Coalescing Operator
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

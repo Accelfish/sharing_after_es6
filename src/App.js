@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import {AppContainer, AppWrap} from "./styledComponent/layout";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link, NavLink
+} from "react-router-dom";
+import Example1 from "./example1";
+import Example2 from "./example2";
+import {NavContainer, NavList, NavItem} from "./styledComponent/nav";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    return (
+        <>
+            <Router>
+                <AppContainer>
+                    <NavContainer>
+                        <NavList>
+                            <NavItem>
+                                <NavLink to="/example1">解構賦值</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to="/example2">展開 & 其餘參數</NavLink>
+                            </NavItem>
+                        </NavList>
+                    </NavContainer>
+                    <AppWrap>
+                        <Routes>
+                            <Route path="/example1" element={<Example1 />} />
+                            <Route path="/example2" element={<Example2 />} />
+                        </Routes>
+                    </AppWrap>
+                </AppContainer>
+            </Router>
+        </>
+    );
 }
 
 export default App;

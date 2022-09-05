@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "fish",
+      "category": "seafood",
+      "cookingMethod": [
+        "grill", "steam", "eatraw"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "apple",
+      "category": "fruit",
+      "cookingMethod": ["eatraw"]
+    },
+    {
+      "id": 3,
+      "name": "slime",
+      "category": "monster"
+    }
+  ],
+  "others": [1, 2, 3, 4, 5]
+}
