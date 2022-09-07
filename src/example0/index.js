@@ -5,7 +5,16 @@ function Example0(){
         [Symbol('name')]: 'Fish',
         [swim]() {
             console.log('swimming');
+        },
+        age: 1200
     }
+    console.group('Symbol');
+    console.log('obj.name', obj.name) // 不能用這種方法取，undefined;
+    console.log('obj["name"]', obj['name']) // 不能用這種方法取，undefined;
+    console.log(JSON.stringify(obj)); //不會印出Symbol
+
+    obj[swim](); //swimming
+    console.groupEnd();
 
     // Set 值唯一
     const notUniqueArr = [1,1,1,2,3,4,5,6,7,8,3,5,6,7];
