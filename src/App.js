@@ -8,6 +8,7 @@ import {
 import Example1 from "./example1";
 import Example2 from "./example2";
 import {NavContainer, NavList, NavItem} from "./styledComponent/nav";
+import Example0 from "./example0";
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
                     <NavContainer>
                         <NavList>
                             <NavItem>
+                                <NavLink to="/example0">DataStructure</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink to="/example1">解構賦值</NavLink>
                             </NavItem>
                             <NavItem>
@@ -28,6 +32,7 @@ function App() {
                     </NavContainer>
                     <AppWrap>
                         <Routes>
+                            <Route path="/example0" element={<Example0 />} />
                             <Route path="/example1" element={<Example1 />} />
                             <Route path="/example2" element={<Example2 />} />
                         </Routes>

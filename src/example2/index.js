@@ -39,10 +39,10 @@ function Example2(){
     // 展開複製用的空物件
     const [obj, setObj] = useState({});
 
-    // useEffect(() => {
-    //     // 物件的展開 Spread syntax
-    //     setObj({...res, 'name': 'SillyFish'});
-    // }, [res]);
+    useEffect(() => {
+        // 物件的展開 Spread syntax
+        setObj({...res, 'name': 'SillyFish'});
+    }, [res]);
 
     const printRes = function() {
         console.log(res, obj)

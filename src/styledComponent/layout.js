@@ -6,7 +6,7 @@ const AppContainer = styled.div`
 `;
 
 const AppWrap = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
