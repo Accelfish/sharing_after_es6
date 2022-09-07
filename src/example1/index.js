@@ -12,7 +12,7 @@ function Example1(){
     // useState => [state, 改變 state 的 function]
     const [count, setCount] = useState(0);
 
-    // 解構可重新命名變數 => 賦值
+    // 解構賦值時，可重新命名變數
     const [word, wordChange] = useState('word');
 
     // 接 API data
