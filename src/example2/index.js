@@ -53,6 +53,18 @@ function Example2(){
         console.log(...res.items)
     };
 
+
+    const printRestParameter = function(a,b,c,...args){
+        console.group("RestParameter")
+        console.log("a:", a);
+        console.log("b:", b);
+        console.log("c:", c);
+        console.log("其餘參數:", args);
+        console.groupEnd();
+    }
+
+    printRestParameter("Hello", "World", "Pikachu", "Raquazer", "Groudon", "Kyogre")
+
     return (
         <>
             <section>
